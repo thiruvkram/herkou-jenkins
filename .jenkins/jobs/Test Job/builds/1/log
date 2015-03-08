@@ -1,0 +1,13 @@
+Started by user [8mha:AAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYO/dLi1CL93FQAOIlvMr0AAAA=[0mme
+Building in workspace /home/brody/.jenkins/jobs/Test Job/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson3858281668738522808.sh
++ pwd
+/home/brody/.jenkins/jobs/Test Job/workspace
++ ls -lart
+total 8
+drwxrwxr-x 4 brody brody 4096 Mar  7 15:33 ..
+drwxrwxr-x 2 brody brody 4096 Mar  7 15:33 .
++ du -sh *
+du: cannot access ‘*’: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
