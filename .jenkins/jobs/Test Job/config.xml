@@ -21,7 +21,7 @@
     <hudson.tasks.Shell>
       <command>pwd;
 ls -lart;
-source .pyvirt/py276/bin/activate;
+${HOME}/.pyvirt/py276/bin/activate;
 which virualenv;
 du -sh .; </command>
     </hudson.tasks.Shell>
