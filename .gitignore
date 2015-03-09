@@ -1,4 +1,5 @@
 .idea
+.jenkins/jobs/General-Python-Project/builds/*
 *.pyc
 */*.pyc
 */*/*.pyc
