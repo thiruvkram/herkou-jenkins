@@ -36,10 +36,6 @@
     <hudson.tasks.Shell>
       <command>pwd;
 ls -lart;
-../../../../.pyvirt/py276/bin/activate;
-which virtualenv;
-../../../../.pyvirt/py276/bin/python build.py ;
-../../../../.pyvirt/py276/bin/python build.py -b;
 du -sh .; </command>
     </hudson.tasks.Shell>
   </builders>
