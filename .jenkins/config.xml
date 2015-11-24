@@ -6,52 +6,53 @@
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:me</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:me</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:me</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:me</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:me</permission>
-    <permission>hudson.model.Computer.Build:me</permission>
-    <permission>hudson.model.Computer.Configure:me</permission>
-    <permission>hudson.model.Computer.Connect:me</permission>
-    <permission>hudson.model.Computer.Create:me</permission>
-    <permission>hudson.model.Computer.Delete:me</permission>
-    <permission>hudson.model.Computer.Disconnect:me</permission>
-    <permission>hudson.model.Hudson.Administer:me</permission>
-    <permission>hudson.model.Hudson.ConfigureUpdateCenter:me</permission>
-    <permission>hudson.model.Hudson.Read:me</permission>
-    <permission>hudson.model.Hudson.RunScripts:me</permission>
-    <permission>hudson.model.Hudson.UploadPlugins:me</permission>
-    <permission>hudson.model.Item.Build:me</permission>
-    <permission>hudson.model.Item.Cancel:me</permission>
-    <permission>hudson.model.Item.Configure:me</permission>
-    <permission>hudson.model.Item.Create:me</permission>
-    <permission>hudson.model.Item.Delete:me</permission>
-    <permission>hudson.model.Item.Discover:me</permission>
-    <permission>hudson.model.Item.Read:me</permission>
-    <permission>hudson.model.Item.Workspace:me</permission>
-    <permission>hudson.model.Run.Delete:me</permission>
-    <permission>hudson.model.Run.Update:me</permission>
-    <permission>hudson.model.View.Configure:me</permission>
-    <permission>hudson.model.View.Create:me</permission>
-    <permission>hudson.model.View.Delete:me</permission>
-    <permission>hudson.model.View.Read:me</permission>
-    <permission>hudson.scm.SCM.Tag:me</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:meme</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:meme</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:meme</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:meme</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:meme</permission>
+    <permission>hudson.model.Computer.Build:meme</permission>
+    <permission>hudson.model.Computer.Configure:meme</permission>
+    <permission>hudson.model.Computer.Connect:meme</permission>
+    <permission>hudson.model.Computer.Create:meme</permission>
+    <permission>hudson.model.Computer.Delete:meme</permission>
+    <permission>hudson.model.Computer.Disconnect:meme</permission>
+    <permission>hudson.model.Hudson.Administer:meme</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:meme</permission>
+    <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Hudson.Read:meme</permission>
+    <permission>hudson.model.Hudson.RunScripts:meme</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:meme</permission>
+    <permission>hudson.model.Item.Build:meme</permission>
+    <permission>hudson.model.Item.Cancel:meme</permission>
+    <permission>hudson.model.Item.Configure:meme</permission>
+    <permission>hudson.model.Item.Create:meme</permission>
+    <permission>hudson.model.Item.Delete:meme</permission>
+    <permission>hudson.model.Item.Discover:meme</permission>
+    <permission>hudson.model.Item.Read:anonymous</permission>
+    <permission>hudson.model.Item.Read:meme</permission>
+    <permission>hudson.model.Item.Workspace:meme</permission>
+    <permission>hudson.model.Run.Delete:meme</permission>
+    <permission>hudson.model.Run.Update:meme</permission>
+    <permission>hudson.model.View.Configure:meme</permission>
+    <permission>hudson.model.View.Create:meme</permission>
+    <permission>hudson.model.View.Delete:meme</permission>
+    <permission>hudson.model.View.Read:anonymous</permission>
+    <permission>hudson.model.View.Read:meme</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
-    <disableSignup>false</disableSignup>
+    <disableSignup>true</disableSignup>
     <enableCaptcha>false</enableCaptcha>
   </securityRealm>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
-  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
   <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
   <clouds/>
-  <slaves/>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
     <hudson.model.AllView>
